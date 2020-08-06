@@ -1,0 +1,74 @@
+.login-page-wrapper {
+  position: absolute;
+  border: none;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #121212;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-page-wrapper .login-page-main-block {
+  position: absolute;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 250px;
+}
+
+.login-page-wrapper .login-page-main-block .btn-google-signin {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 35px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  border-radius: 17.5px;
+  margin: 10px 0;
+}
+
+.login-page-wrapper .login-page-main-block .input-login {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10px;
+  margin: 5px 0;
+  height: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.login-page-wrapper .login-page-main-block .input-password {
+  font-size: 25px;
+  -webkit-text-security: disc;
+}
+
+.login-page-wrapper .login-page-main-block .btns-row {
+  margin-top: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.login-page-wrapper .login-page-main-block .btns-row .btn-login {
+  padding: 0;
+  border: none;
+  height: 20px;
+  border-radius: 10px;
+  width: 40%;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.login-page-wrapper .login-page-main-block .btns-row .btn-email-login {
+  background-color: #1db954;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=LoginPage.css.map */

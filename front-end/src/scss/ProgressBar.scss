@@ -1,0 +1,96 @@
+$progress-bar-width: 316.8px;
+$progress-bar-heigth: 4px;
+$progress-bar-border-radius: $progress-bar-heigth/2;
+
+$progress-bar-unloaded-background-color: #5353538c;
+$progress-bar-loaded-background-color: #cacaca;
+$progress-bar-loaded-to-translateX: -100%;
+
+$progress-bar-played-background-color: #e4e4e4;
+$progress-bar-played-background-color-hover: #1db954;
+$progress-bar-played: 0%;
+$progress-bar-played-to-translateX: $progress-bar-played - 100%;
+
+$progress-bar-slider-button-radius: 7px;
+$progress-bar-slider-button-heigth: $progress-bar-slider-button-radius * 2;
+$progress-bar-slider-button-width: $progress-bar-slider-button-radius * 2;
+$progress-bar-slider-button-color: #ffffff;
+
+.progress-bar {
+    position: relative;
+    width: 100%;
+    height: 12px;
+
+    .progress-bar-middle-alingment {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: $progress-bar-heigth;
+        top: 50%;
+        transform: translateY(-50%);
+        align-self: center;
+        box-sizing: border-box;
+
+        .progress-bar-wrapper {
+            position: absolute;
+            overflow: hidden;
+            display: flex;
+            top: 50%;
+            transform: translateY(-50%);
+            align-content: center;
+            width: 100%;
+            height: $progress-bar-heigth;
+            border-radius: $progress-bar-border-radius;
+            background-color: $progress-bar-unloaded-background-color;
+
+            .progress-bar-played {
+                width: 100%;
+                height: $progress-bar-heigth;
+                border-radius: $progress-bar-border-radius;
+                z-index: 1;
+                background-color: $progress-bar-played-background-color;
+                transform: translateX($progress-bar-played-to-translateX);
+                transition: background-color 0.3s;
+            }
+
+            .progress-bar-loaded {
+                position: absolute;
+                width: 100%;
+                height: $progress-bar-heigth;
+                border-radius: $progress-bar-border-radius;
+                z-index: 0;
+                background-color: $progress-bar-loaded-background-color;
+                transform: translateX($progress-bar-loaded-to-translateX);
+            }
+        }
+
+        .progress-bar-slider-button {
+            height: $progress-bar-slider-button-heigth;
+            width: $progress-bar-slider-button-width;
+            border: 0;
+            border-radius: $progress-bar-slider-button-radius;
+            background-color: $progress-bar-slider-button-color;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            cursor: default;
+            position: absolute;
+            left: $progress-bar-played;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.1s;
+            opacity: 0;
+        }
+    }
+}
+
+.progress-bar-hovered {
+    .progress-bar-middle-alingment {
+        .progress-bar-wrapper {
+            .progress-bar-played {
+                background-color: $progress-bar-played-background-color-hover;
+            }
+        }
+        .progress-bar-slider-button {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.now-playing-bar-right {
+    // position: relative;
+    width: 30%;
+    .volume-controler {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        width: 100px;
+    }
+}

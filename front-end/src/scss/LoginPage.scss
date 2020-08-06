@@ -1,0 +1,87 @@
+$font-color: #fafafa;
+
+$background-color: #121212;
+
+$block-width: 250px;
+
+$btn-google-signin-height: 35px;
+$btn-google-signin-border-radius: $btn-google-signin-height/2;
+
+$input-height:20px;
+$input-border-radius: $input-height/2;
+
+$btn-login-height: 20px;
+$btn-login-border-radius: $btn-login-height/2;
+
+$login-btn-background-color: #1db954;
+
+.login-page-wrapper {
+    position: absolute;
+    // color: $font-color;
+    // margin: -30px;
+    border:none;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: $background-color;
+    align-items: center;
+    
+    .login-page-main-block {
+        position: absolute;
+        height: auto;
+        left: 50%;
+        top: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        width: $block-width;
+        
+        .btn-google-signin {
+            position: relative;
+            left:50%;
+            transform: translateX(-50%);
+            height: $btn-google-signin-height;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            border-radius: $btn-google-signin-border-radius;
+            margin: 10px 0;
+        }
+        
+        .input-login{
+            box-sizing: border-box;
+            padding-left: 10px;
+            margin: 5px 0;
+            height: $input-height;
+            width: 100%;
+            border: none;
+            border-radius: $input-border-radius;
+            background-color: white;
+        }
+
+        .input-password {
+            font-size: 25px;
+            -webkit-text-security: disc;
+        }
+
+        .btns-row {
+            margin-top: 10px;
+            box-shadow: none;
+            
+            
+            .btn-login {
+                padding: 0;
+                border: none;
+                height: $btn-login-height;
+                border-radius: $btn-login-border-radius;
+                width: 40%;
+                margin: 0 10px;
+                cursor: pointer;
+            }
+
+            .btn-email-login {
+                background-color: $login-btn-background-color;
+                color: whitesmoke;
+            }
+        }
+    }
+}

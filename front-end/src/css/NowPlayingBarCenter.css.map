@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,uBAAuB,CAAC;EACpB,KAAK,EAAE,GAAG;CACb",
+    "sources": [
+        "../scss/NowPlayingBarCenter.scss"
+    ],
+    "names": [],
+    "file": "NowPlayingBarCenter.css"
+}

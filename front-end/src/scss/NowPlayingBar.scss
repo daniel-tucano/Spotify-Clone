@@ -1,0 +1,11 @@
+.now-playing-bar-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    text-align: bottom;
+    bottom: 0px;
+    background-color: #282828;
+    height: 75px;
+    width: 100%;
+    z-index: 4;
+}

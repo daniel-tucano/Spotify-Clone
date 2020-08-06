@@ -1,0 +1,11 @@
+.now-playing-bar-right {
+  width: 30%;
+}
+
+.now-playing-bar-right .volume-controler {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  width: 100px;
+}
+/*# sourceMappingURL=NowPlayingBarRight.css.map */

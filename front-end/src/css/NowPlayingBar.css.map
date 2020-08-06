@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,wBAAwB,CAAC;EACrB,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,GAAG;EACX,gBAAgB,EAAE,OAAO;EACzB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,CAAC;CACb",
+    "sources": [
+        "../scss/NowPlayingBar.scss"
+    ],
+    "names": [],
+    "file": "NowPlayingBar.css"
+}
