@@ -3,7 +3,7 @@ const firebase = require('firebase-admin');
 
 firebase.initializeApp(
     {
-        apiKey: "AIzaSyAFK-YJqI9upPYMcs5Pyq7xtOBwS4VBWAs",
+        apiKey: "Insert-API-Key",
         authDomain: "spotify-clone-96417.firebaseapp.com",
         databaseURL: "https://spotify-clone-96417.firebaseio.com",
         projectId: "spotify-clone-96417",
