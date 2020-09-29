@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Dir') {
+    stage('Build') {
       agent any
       steps {
+        bat 'yarn install'
         bat 'yarn build'
       }
     }
