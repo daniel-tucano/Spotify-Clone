@@ -15,7 +15,7 @@ pipeline {
     stage('Firebase Deploy') {
       steps {
         dir(path: './front-end') {
-          bat 'firebase deploy'
+          bat 'C:\\Users\\daanr\\AppData\\Roaming\\npm\\firebase deploy'
         }
 
       }
