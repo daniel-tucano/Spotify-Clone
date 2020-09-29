@@ -4,9 +4,11 @@ pipeline {
     stage('Build') {
       agent any
       steps {
-        dir(path: './front-end')
-        bat 'yarn install'
-        bat 'yarn build'
+        dir(path: './front-end') {
+          bat 'yarn install'
+          bat 'yarn build'
+        }
+
       }
     }
 
