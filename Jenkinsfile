@@ -4,7 +4,7 @@ pipeline {
     stage('Dir') {
       agent any
       steps {
-        bat(script: 'dir', returnStdout: true, returnStatus: true)
+        bat 'dir'
       }
     }
 
