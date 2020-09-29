@@ -1,7 +1,8 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Dir') {
+      agent any
       steps {
         bat(script: 'dir', returnStdout: true, returnStatus: true)
       }
