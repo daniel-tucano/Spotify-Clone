@@ -14,7 +14,10 @@ pipeline {
 
     stage('Firebase Deploy') {
       steps {
-        bat 'firebase deploy'
+        dir(path: './front-end') {
+          bat 'firebase deploy'
+        }
+
       }
     }
 
