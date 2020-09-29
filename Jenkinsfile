@@ -4,7 +4,7 @@ pipeline {
     stage('Dir') {
       agent any
       steps {
-        bat 'dir'
+        bat 'dir > dir_results.txt'
       }
     }
 
