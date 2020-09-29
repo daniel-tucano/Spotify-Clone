@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       agent any
       steps {
-        bat 'cd front-end'
+        dir(path: './front-end')
         bat 'yarn install'
         bat 'yarn build'
       }
