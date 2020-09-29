@@ -15,6 +15,8 @@ pipeline {
     stage('Firebase Deploy') {
       steps {
         dir(path: './front-end') {
+          bat 'C:\\Users\\daanr\\AppData\\Roaming\\npm\\firebase login'
+          input 'Logue no firebase para continuar'
           bat 'C:\\Users\\daanr\\AppData\\Roaming\\npm\\firebase deploy'
         }
 
