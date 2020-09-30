@@ -27,7 +27,7 @@ pipeline {
       steps {
         dir(path: './front-end') {
           bat 'dir > dir_front_end.txt'
-          bat 'C:\\Users\\daanr\\AppData\\Roaming\\npm\\firebase deploy --token $FIREBASE_TOKEN'
+          bat 'C:\\Users\\daanr\\AppData\\Roaming\\npm\\firebase deploy --token "$FIREBASE_TOKEN"'
         }
 
       }
