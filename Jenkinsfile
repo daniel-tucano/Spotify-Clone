@@ -2,7 +2,12 @@ pipeline {
   agent any
   stages {
     stage('Build') {
-      agent any
+      agent {
+        node {
+          label 'master'
+        }
+
+      }
       steps {
         dir(path: './front-end') {
           bat 'yarn install'
@@ -13,6 +18,12 @@ pipeline {
     }
 
     stage('Firebase Deploy') {
+      agent {
+        node {
+          label 'master'
+        }
+
+      }
       steps {
         dir(path: './front-end') {
           bat 'dir > dir_front_end.txt'
